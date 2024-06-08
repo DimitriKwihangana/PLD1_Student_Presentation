@@ -1,15 +1,15 @@
 import numpy as np
 
-# Parameters
-n = 10
-p = 0.3
+def binomial_probability(n, p):
+    probabilities = []
+    for k in range(n + 1):
+        binom_coeff = np.prod(np.arange(n, n - k, -1)) / np.prod(np.arange(1, k + 1))
+        probability = binom_coeff * (p ** k) * ((1 - p) ** (n - k))
+        probabilities.append(probability)
+    return probabilities
 
-# Function to compute binomial probability
-def binomial_probability(n, k, p):
-    binom_coeff = np.math.factorial(n) / (np.math.factorial(k) * np.math.factorial(n - k))
-    return binom_coeff * (p ** k) * ((1 - p) ** (n - k))
+n = 5
+p = 0.5
 
-# Compute probabilities for all possible number of successes
-probabilities = [binomial_probability(n, k, p) for k in range(n + 1)]
-
-probabilities
+probabilities = binomial_probability(n, p)
+print(probabilities)
