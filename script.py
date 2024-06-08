@@ -7,4 +7,7 @@ def binomial_probability(n, p):
         probability = binom_coeff * (p ** k) * ((1 - p) ** (n - k))
         probabilities.append(probability)
     return probabilities
+    # Parameters
+n = 5
+p = 0.5
 
