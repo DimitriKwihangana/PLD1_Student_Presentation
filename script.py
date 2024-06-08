@@ -8,8 +8,3 @@ def binomial_probability(n, p):
         probabilities.append(probability)
     return probabilities
 
-n = 5
-p = 0.5
-
-probabilities = binomial_probability(n, p)
-print(probabilities)
