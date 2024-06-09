@@ -31,7 +31,7 @@ We use `numpy` for numerical computations.
 ```python
 import numpy as np
 
-### Define Parameters
+Define Parameters
 
 Set the parameters for the binomial distribution:
 
@@ -40,7 +40,7 @@ p: Probability of success in each trial.
 n = 5
 p = 0.5
 
-### Calculate Binomial Probabilities
+Calculate Binomial Probabilities
 Define a function to calculate probabilities for each number of successes from 0 to n:
 def binomial_probability(n, p):
     probabilities = []
@@ -50,7 +50,7 @@ def binomial_probability(n, p):
         probabilities.append(probability)
     return probabilities
 
-### Compute Probabilities
+Compute Probabilities
 Compute and print the probabilities:
 probabilities = binomial_probability(n, p)
 print(probabilities)
