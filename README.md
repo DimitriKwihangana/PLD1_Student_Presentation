@@ -54,7 +54,10 @@ Compute Probabilities
 Compute and print the probabilities:
 probabilities = binomial_probability(n, p)
 print(probabilities)
+```python
 
-## Summary
-We demonstrated how to compute the binomial distribution using only NumPy. Understanding the binomial distribution helps us model and analyze scenarios with binary outcomes, which is very inmportant in  machine learning applications.
+## Overview
+
+This task involves understanding and calculating the binomial distribution using only NumPy in Python. The binomial distribution is a discrete probability distribution that describes the number of successes in a fixed number of independent trials of a binary experiment.
+
 
